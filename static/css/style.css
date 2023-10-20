@@ -1,0 +1,204 @@
+:root {
+    --primary-color: rgb(13,210,164);
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;  /* 添加填充以減少容器和卡片之間的間距 */
+    justify-content: flex-start;
+  }
+  
+  .transcript-section {
+    width: calc(100% - 1rem);
+    margin: 0 1rem 1rem 1rem;  /* 添加底部外邊距以減少間距 */
+    height: 30%;
+  }
+  
+  .top-section {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 0;
+  }
+  
+  .card-section, .chart-section {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0.5rem;
+  }
+  
+  
+  /* 新建一個通用的類 .card-container */
+  .card-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0.5rem;
+  }
+  
+  .redirect-section, .card-section {
+    display: flex;
+  }
+  
+  /* 使用通用的類 .card-container */
+  .card-container .card {
+    background-color: rgb(16, 16, 16);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    padding: 0.5rem;  /* 減少填充以保證內容不超出卡片 */
+    margin: 0 auto;
+    position: relative;
+    height: 80%;  /* 調整高度以匹配 card-section 的卡片 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+  
+  .card, .transcript-section .card {
+    width: 100%;
+  }
+  
+  .redirect-section .card {
+    width: 100%;
+  }
+  
+  .card, .redirect-section .card {
+    background-color: rgb(16, 16, 16);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card, .transcript-section .card {
+    width: 100%; /* 使逐字稿卡片和導流卡片的寬度相同 */
+  }
+  
+  .redirect-section .card {
+    width: 100%;
+  }
+  
+  
+  .card:after {
+    content: "";
+    height: 70px;
+    width: 1px;
+    position: absolute;
+    left: -1px;
+    top: 65%;
+    transition: top 600ms ease, opacity 600ms ease;
+    background: linear-gradient(transparent, var(--primary-color), transparent);
+    opacity: 0;
+  }
+  
+  .card:hover:after {
+    top: 25%;
+    opacity: 1;
+  }
+  
+  .card-content, .redirect-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-position: 0 0;
+    background-size: 1.1rem 1.1rem;
+    padding: 4rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .card-content > :is(h1, h3, p), .redirect-card-content > :is(h1, h2, h3, p) {
+    text-align: center;
+  }
+  
+  .card-content > h1, .redirect-card-content > h1 {
+    color: rgb(250, 249, 246);
+    font-size: 2.6rem;
+  }
+  
+  .card-content > h2, .redirect-card-content > h2 {
+    color: rgb(250, 249, 246);
+    font-size: 1.4rem;
+  }
+  
+  .card-content > h3, .redirect-card-content > h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.76rem;
+  }
+  
+  .card-content > p, .redirect-card-content > p {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5rem;
+  }
+  
+  .chart-title {
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+  }
+  
+  @media(max-width: 700px) {
+    .card {
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
+      padding: 0.75rem;
+      border-radius: 1rem;
+    }
+  }
+  
+  @media(max-width: 700px) {
+    .transcript-section, .redirect-section {
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
+    }
+    .card {
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
+      padding: 0.5rem;  /* 減少填充以保證內容不超出卡片 */
+      border-radius: 1rem;
+    }
+  }
+  
+  #chart-container {
+    position: relative;
+    height: 75vh;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
