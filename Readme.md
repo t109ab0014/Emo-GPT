@@ -3,6 +3,7 @@
 
 ## 專案概述
 Emo-GPT是一個基於PyTorch的語音情緒辨識系統，通過分析音訊檔案，判斷說話者的情緒。
+使用Flask + SocketIO（通訊協定）作為 Real-time 技術基礎
 
 ## 快速開始
 
