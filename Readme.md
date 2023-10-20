@@ -1,4 +1,4 @@
-```markdown
+
 # Emo-GPT - 語音情緒辨識API
 
 ## 專案概述
@@ -44,4 +44,4 @@ python integrated_app.py
 
 ## License
 本專案使用Apache-2.0許可證，詳見[LICENSE](LICENSE)檔案。
-```
+
