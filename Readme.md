@@ -10,11 +10,18 @@ Emo-GPT是一個基於PyTorch的語音情緒辨識系統，通過分析音訊檔
 ### 環境設置
 - Python 3.8+
 - PyTorch 1.7+
-- Flask
+- flask
+- flask_cors
+- flask_socketio
+- torch
+- numpy
 - librosa
+- tqdm
+
 
 ```bash
-pip install torch flask librosa
+pip install -r requirements.txt
+
 ```
 
 ### 運行服務器
@@ -30,6 +37,8 @@ python integrated_app.py
 ### 測試情緒辨識
 - 打開您的瀏覽器，並訪問 `http://localhost:50500`。
 - 上傳一個音訊檔案，然後點擊「預測」按鈕。
+### 測試影片
+https://github.com/t109ab0014/Emo-GPT/assets/131231801/0da71d59-2f31-4a97-8fad-fd47362814cd
 
 ## 文件結構
 - `main.py`：主程式檔案，包含Flask應用和所有API端點。
