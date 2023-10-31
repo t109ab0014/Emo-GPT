@@ -167,9 +167,10 @@ def upload_file():
         
         if translated_emotion in emotion_xyz:
             emotion_coordinates = emotion_xyz[translated_emotion]
+            print(f"Emotion coordinates: {emotion_coordinates}")  # 调试用
         else:
             print(f"Emotion {translated_emotion} not found in emotion_xyz dictionary")  # 调试用
-            emotion_coordinates = {'x': 1, 'y': 1, 'z': 1}
+            emotion_coordinates = {'x': 1, 'y': 1, 'z': 1} #不在情緒字典中的情緒，隨機生成坐標
 
         # 更新global_data
         generate_data(emotion_coordinates)
@@ -193,7 +194,8 @@ def send_data_to_client():
 def update_data():
     while True:
         time.sleep(3)  # 每3秒更新一次數據
-        send_data_to_client()  # 新數據準備好後，通知客戶端
+        #generate_data(reset=True)  # 重置global_data
+        send_data_to_client()  # 新數據準備好後，通知客戶端更新數據
 
 def computeZ(x, y):
     data = global_data  # 使用全局變量
@@ -205,14 +207,15 @@ def computeZ(x, y):
 
     return sum
 
-def generate_data(new_emotion_data=None):
+def generate_data(new_emotion_data=None, reset=False):
     global global_data
-    if new_emotion_data:
-        global_data = [new_emotion_data]
-    else:
-        global_data = [
-            {'x': 0, 'y': 0, 'z': 0},
-        ]
+    if reset:
+        global_data = [{'x': 0, 'y': 0, 'z': 0}]
+        print('global_data reset')  # 调试用
+    elif new_emotion_data:
+        global_data.append(new_emotion_data)
+        print(f'global_data updated: {new_emotion_data}')  # 调试用
+
 
     data = []
     for x in range(-150, 151, 5):  # 修改步長以匹配原始步長 0.05
