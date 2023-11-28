@@ -193,8 +193,8 @@ import requests
 def call_gpt_chat_api(dialogue_content, emotion_analysis):
     url = "https://api.openai.com/v1/chat/completions"
     headers = {
-        "Authorization": "Bearer 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",
-        "OpenAI-Organization": "org-Kuc3r0VCGGBiFP9PsJjowlED"
+        "Authorization": "Bearer YOUR_API_KEY",
+        "OpenAI-Organization": "YOUR_ORG"
     }
     messages = [
         {"role": "system", "content": "模型任務：1. 分析對話內容，識別是否有符合詐欺模式的跡象。2. 根據情緒分析結果，評估對話中的情緒指標是否與詐欺行為相關。3. 綜合上述分析結果，根據風險導流SOP決定是否需要延後、轉交或拒絕請求。只需要模型輸出：1. [分析結果：詐欺模式#X（若有符合的模式），或「無明顯詐欺模式」] <br> 2. [風險導流決策：「請延後或轉交其他部門」或「請繼續處理」]"},
