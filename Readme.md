@@ -1,4 +1,4 @@
-```markdown
+
 # Emo-GPT - 語音情緒辨識API
 
 ## 專案概述
@@ -22,13 +22,17 @@ pip install torch flask librosa
 2. 在終端中切換至專案目錄。
 3. 運行以下指令啟動服務器：
 ```bash
-python integrated_app.py
+python integrated_app+whisper.py
 ```
 服務器將在 `0.0.0.0:50500` 上運行。
 
 ### 測試情緒辨識
 - 打開您的瀏覽器，並訪問 `http://localhost:50500`。
 - 上傳一個音訊檔案，然後點擊「預測」按鈕。
+
+### 系統Demo
+https://github.com/t109ab0014/Emo-GPT/assets/131231801/149796d0-8787-488a-bbd8-ecb99415cb6d
+
 
 ## 文件結構
 - `main.py`：主程式檔案，包含Flask應用和所有API端點。
@@ -44,4 +48,4 @@ python integrated_app.py
 
 ## License
 本專案使用Apache-2.0許可證，詳見[LICENSE](LICENSE)檔案。
-```
+
