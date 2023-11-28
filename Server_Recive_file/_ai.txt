@@ -1,0 +1,34 @@
+發展是從2012年就開始,是從Deep Learning的時候開始,最近十年,到2023年,十一年之後,發表了Generative AI
+這兩個都是一個AI的突破
+台積電對於這兩個突破都盡量使用看看怎樣來能夠增加台積電工廠生產、IC設計、R&D的方法
+從裡面來看,更是相當令人振奮
+因為我們的Business,以前大部分是Smartphone,然後HPC是第二
+到2022年的時候HPC超過了Smartphone
+所以這個現象,因為AI的到來,新的Generative AI的到來,這個現象會更Confirm
+但是這不代表Smartphone就可以你說,這個大家要知道
+因為今天的Generative AI都在Data Center
+Data Center,比如說上個禮拜華人新來,在台灣全球一陣全封
+他的所有Business都是Smartphone Data Center
+但同時,我們看到Intel,他就說,Generative AI不只在Data Center
+也會在我的Smartphone,也會在BCD
+因為有一些Inference的功能,在Data Center不但速度慢,而且沒有Privacy
+所以應該在PC或是Smartphone這邊
+這個又代表我們公司的這些PC、IoT、甚至是Automotive
+他的Serial Content就會更為增加
+這方面還沒有發酵,我們也無法估計
+不過這個是絕對是會發生的
+台積電在德國是很進步
+這個我想在報章雜誌以後,公司也派了團隊兩、三次去德國
+到目前為止,其實感覺都還不錯
+我們最主要的是看到他們那邊的Supply Chain System
+看到那邊的Labor,就是Talent的Supply
+這兩點大概是我們最擔心的
+其實這兩點確實是有些Gap
+但是德國政府、當地政府也Promise
+要在很短時間內把它建立起來
+包括台英的學生到台灣的大學,修理會交換學生等等
+目前為止,我們還在跟德國繼續的Negotiate
+它的Supply多少,還有不要有什麼條件
+要有條件的Support,Supply
+我們在仔細討論之中,還在Negotiate
+OK,謝謝

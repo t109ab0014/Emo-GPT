@@ -30,13 +30,7 @@
           <div class="card">
             <div class="card-content">
               <h2>逐字稿</h2>
-              <p>
-                客服：永豐銀行您好，請問有什麼可以為您服務的地方呢？<br>
-                客戶：你好，我這幾天有收到印鑑不符合的通知書，但我記得我的是對的啊，啊要怎麼辦？<br>
-                客服：了解，方便提供您的身分證字號以供查詢嗎？<br>
-                客戶：喔喔好，我的身分證字號是A123455678<br>
-                客服：馬上為您查詢，請稍候。<br>
-              </p>
+              <p>{{ transcription|safe }}</p>
             </div>
           </div>
         </div>
@@ -51,26 +45,14 @@
           <div class="card-section">
             <div class="card">
               <div class="card-content">
-                <h2>總結</h2>
-                <p>1. 客戶顯示出高度的情緒不安和失望，客服需展示出高度的同理心和理解，並提供具有事實根據的解答來平衡對話。<br>
-                  2. 要注意客戶可能處於猶豫不決的狀態，因此需要提供清晰和確切的信息來減少他們的不確定性。<br>
-                  3. 客服應該努力提高對話的效率，並儘量減少客戶在尋找答案時的努力，以創建一個更積極和正面的客戶服務體驗。
-                </p>
+                <h2>處理</h2>
+                <p>{{ summary }}</p>
               </div>
             </div>
           </div>
         </div>
       
-        <div class="redirect-section">
-          <div class="card">
-            <div class="card-content">
-              <h2>導流至</h2>
-              <p>大戶官網: https://dawho.tw/faq/apply/<br>
-                常見問題>自動扣繳>Q3： 我收到印鑑不符的通知該怎麼辦？
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
       
       
